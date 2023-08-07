@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./contact_style.css">
+    <script src="https://kit.fontawesome.com/2e13355c69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="rectangle">
+        <img src="./primary.jpg">
+        <h2><span>ROS</span>HAN.</h2>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Me</a>
+            <a href="./education.html">Education</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./contact.html"><span>Contact</span></a>
+        </nav>
+
+        <div class="contact">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-me">
+            <p> <i class="fa-solid fa-phone"></i> 9863093712</p><br>
+            <p> <i class="fa-solid fa-paper-plane"></i> roshanshah12113@gmail.com</p>
+        </div>
+        <div class="social-icon">
+            <a href="https://www.facebook.com/profile.php?id=100018256207072" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://twitter.com/RoshanShah50116?t=NcSwdgXqDKeMhYDw-jvQ&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/roshan-shah-73471b259" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Roshan-Shah-7" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="cv">
+            <a href="./mine cv.pdf" class="btn" download>Download CV</a>
+        </div>
+        <div class="any">
+            <h1>If you have any message for me!</h1>
+        </div>
+        <div class="cantact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <input type="number" name="Number" placeholder="Your Number" required>
+                <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @ Roshan <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyHFfjodb0qt1k3VmsjemOx5-rbsZIFUhatWfPfq2AqvpaEdDHjahn_YtjOGF87_TojxQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thank You! Your message is send."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+      
+
+</body>
+</html>

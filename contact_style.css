@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #081b29;
+    --secondary-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.rectangle{
+    width: 270px;
+    height: 1080px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    position: fixed;
+}
+.rectangle img{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    left: 30px;
+    top: 61px;
+    border-radius: 50%;
+}
+
+.rectangle h2{
+    width: 195px;
+height: 40px;
+position: absolute;
+left: 35px;
+top: 288px;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+
+.rectangle h2 span{
+    color: #00abf0;
+}
+
+.rectangle nav{
+    display: flex;
+    width: 173px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    position: absolute;
+    left: 49px;
+    bottom: 304px;
+}
+
+.rectangle nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    width: 181px;
+    height: 42px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+
+.rectangle nav  :hover{
+    color: var(--main-color);
+    font-size: 29px;
+    padding: 5% 10%;
+    transition: 0.4s;
+}
+.rectangle span{
+    color: var(--main-color);
+}
+
+.copyright{
+    width: 100%;
+    position: absolute;
+    left: 20%;
+    top: 87%;
+}
+
+.contact{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    left: 130%;
+    top: 40%;
+    font-size: 20px;
+    font-style: bold;
+}
+.contact-me{
+    width: 100%;
+    position: absolute;
+    left: 130%;
+    top: 50%;
+}
+
+.contact-me p{
+    font-size: 2em;
+    letter-spacing: 2px;
+    display: flex;
+}
+.contact-me p i{
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+.contact-me i{
+    color: var(--main-color);
+}
+.social-icon a i{
+    font-size: 4em;
+    letter-spacing: 20px;
+    color: gray;
+    transition: 0.5s;
+    display: inline-block;
+    position: relative;
+    left: 150%;
+    top: 59%;
+}
+.social-icon a i:hover{
+    color: var(--main-color);
+    font-size: 5em;
+}
+
+
+
+.cv {
+    color: var(--main-color);
+    position: absolute;
+    left: 120%;
+    top: 65%;
+    width: 100%;
+}
+.cv a{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.btn{
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    border: 1px solid var(--main-color);
+    padding: 14px 50px;
+    border-radius: 6px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: var(--main-color);
+}
+.cantact-right{
+    left: 350%;
+    top: 30%;
+    position: absolute;
+}
+
+.cantact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    border: 0;
+    outline: none;
+    background: #524c4c;
+    padding: 15px;
+    margin: 15px 0;
+    color: var(--text-color);
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form input{
+    width: 150%;
+    padding: 15px;
+}
+
+.btn2{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text-color);
+    position: absolute;
+    left: 1%;
+    top: 98%;
+}
+
+button{
+    background: var(--bg-color);
+}
+
+.any{
+    position: absolute;
+    display: flex;
+    left: 340%;
+    top: 24%;
+    width: 300%;
+}
+
+.any h1{
+    font-size: 3em;
+}
+#msg{
+    color: var(--text-color);
+    margin-top: -10px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}

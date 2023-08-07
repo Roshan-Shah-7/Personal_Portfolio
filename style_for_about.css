@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #081b29;
+    --secondary-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.rectangle{
+    width: 270px;
+    height: 1080px;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    position: fixed;
+}
+.rectangle img{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    left: 30px;
+    top: 61px;
+    border-radius: 50%;
+}
+
+.rectangle h2{
+    width: 195px;
+height: 40px;
+position: absolute;
+left: 35px;
+top: 288px;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+
+.rectangle h2 span{
+    color: #00abf0;
+}
+
+.rectangle nav{
+    display: flex;
+    width: 173px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    position: absolute;
+    left: 49px;
+    bottom: 304px;
+}
+
+.rectangle nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    width: 181px;
+    height: 42px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+}
+
+.rectangle nav  :hover{
+    color: var(--main-color);
+    font-size: 29px;
+    transition: 0.4s;
+}
+.rectangle span{
+    color: var(--main-color);
+}
+
+#aboutme{
+    width: 805px;
+    height: 336px;
+    position: absolute;
+    left: 374px;
+    bottom: 304px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+}
+
+#picture img{
+    width: 412px;
+    position: absolute;
+    right: 150px;
+    top: 170px;
+    border-radius: 50px;
+}

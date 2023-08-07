@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="./skill_style.css">
+</head>
+<body>
+    <div class="rectangle">
+        <img src="./primary.jpg">
+        <h2><span>ROS</span>HAN.</h2>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Me</a>
+            <a href="./education.html">Education</a>
+            <a href="./skills.html"><span>Skills</span></a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('C')">C/C++</p>
+        <p class="tab-links" onclick="opentab('Java')">OOP in Java</p>
+        <p class="tab-links" onclick="opentab('Html')">HTML & CSS</p>
+        <p class="tab-links" onclick="opentab('Ui')">UI/UX</p>
+    </div>
+    <div class="about">
+        <p>I have developed different skill in differnt fields.
+            Such as communcation, flexible with working hours, time
+            management and so on. 
+         </p>
+    </div>
+    <div class="tab-contents active-tab" id="C">
+        <p>I possess a strong command of C/C++ programming languages, 
+            which has allowed me to develop efficient and high-performance 
+            solutions for various projects.
+        </p>
+    </div>
+    <div class="tab-contents java" id="Java">
+        <p>My journey into Object-Oriented Programming (OOP) 
+            with Java has been both enlightening and rewarding.
+             With a deep understanding of key OOP concepts such
+              as encapsulation, inheritance, and polymorphism,
+               I have honed the ability to design and implement 
+               modular and extensible applications.
+
+        </p>
+    </div>
+    <div class="tab-contents html" id="Html">
+        <p>
+            I have developed a strong expertise in HTML and CSS,
+             the building blocks of captivating web design.
+              I am well-versed in crafting elegant and responsive
+               user interfaces that deliver seamless experiences 
+               across various devices and browsers.
+
+        </p>
+    </div>
+    <div class="tab-contents ui" id="Ui">
+        <p>My love for design and user 
+            experience has led me to become proficient
+            in UI/UX design, where creativity meets functionality.
+            I am deeply committed to crafting intuitive and visually
+            appealing interfacesthat enhance user interactions and create memorable experiences.
+        </p>
+    </div>
+    <div class="logo">
+        <img src="./coding.jpg">
+    </div>
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
